@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Twinsen_ProductsOfCategoryWidget>
+            <version>1.0.0</version>
+        </Twinsen_ProductsOfCategoryWidget>
+    </modules>
+    <global>
+        <models>
+            <twinsen_productsofcategorywidget>
+                <class>Twinsen_ProductsOfCategoryWidget_Model</class>
+                <resourceModel>twinsen_productsofcategorywidget_resource</resourceModel>
+            </twinsen_productsofcategorywidget>
+            <twinsen_productsofcategorywidget_resource>
+                <class>Twinsen_ProductsOfCategoryWidget_Model_Resource</class>
+            </twinsen_productsofcategorywidget_resource>
+        </models>
+        <blocks>
+            <twinsen_productsofcategorywidget>
+                <class>Twinsen_ProductsOfCategoryWidget_Block</class>
+            </twinsen_productsofcategorywidget>
+        </blocks>
+        <helpers>
+            <twinsen_productsofcategorywidget>
+                <class>Twinsen_ProductsOfCategoryWidget_Helper</class>
+            </twinsen_productsofcategorywidget>
+        </helpers>
+    </global>
+</config>

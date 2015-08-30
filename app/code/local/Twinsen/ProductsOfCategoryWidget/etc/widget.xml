@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<widgets>
+    <productsofcategory type="twinsen_productsofcategorywidget/productsofcategory" translate="name description" module="twinsen_productsofcategorywidget">
+        <name>Products of Category</name>
+        <description>Allows to display the Products of a Category</description>
+        <parameters>
+            <category>
+                <label>Category</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>twinsen_productsofcategorywidget/categorychooser</source_model>
+            </category>
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <label>Template</label>
+                <type>select</type>
+                <value>catalog/product/widget/new/content/new_grid.phtml</value>
+                <values>
+                    <default translate="label">
+                        <value>catalog/product/widget/new/content/new_grid.phtml</value>
+                        <label>New Products Grid Template</label>
+                    </default>
+                    <list translate="label">
+                        <value>catalog/product/widget/new/content/new_list.phtml</value>
+                        <label>New Products List Template</label>
+                    </list>
+                </values>
+            </template>
+            <products_count translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>5</value>
+                <label>Number of Products to Display</label>
+                <type>text</type>
+            </products_count>
+        </parameters>
+
+    </productsofcategory>
+</widgets>
